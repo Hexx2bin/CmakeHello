@@ -9,9 +9,12 @@ project(HelloCmake)
 # Place your code here
 #}}}}
 
+
+
 #add_executable(HelloCmake ${RC_SRCS} ${CXX_SRCS} ${C_SRCS})
+add_subdirectory(src)
 add_executable(HelloCmake main.cpp)
-target_link_libraries(HelloCmake ${LINK_OPTIONS})
+target_link_libraries(HelloCmake mylib)
 
 #{{{{ User Code 3
 # Place your code here
