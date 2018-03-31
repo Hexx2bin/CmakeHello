@@ -1,11 +1,11 @@
 #include "Square.h"
 
-Square::Square(int sideLength):_side(sideLength)
+Square::Square(float sideLength):_side(sideLength)
 {
 
 }
 
-int Square::GetArea() const
+float Square::GetArea() const
 {
     return _side*_side;
 }

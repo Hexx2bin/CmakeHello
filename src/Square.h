@@ -1,9 +1,11 @@
-class Square
+#include <Figure.h>
+
+class Square: public Figure
 {
 private:
-    int _side;
+    float _side;
 
 public:
-    Square(int sideLength);
-    int GetArea() const;
+    Square(float sideLength);
+    float GetArea() const;
 };

@@ -5,10 +5,10 @@ cmake_minimum_required(VERSION 2.8.11)
 # Project name
 project(mylib)
 
-set(CPP_SOURCE Square.cpp)
-set(HEADERS Square.h)
+set(CPP_SOURCE Square.cpp Triangle.cpp Circle.cpp)
+set(HEADERS Square.h Triangle.h Circle.h)
 
-add_library(mylib  ${CPP_SOURCE})
+add_library(mylib SHARED ${CPP_SOURCE})
 
 target_include_directories(
     mylib PUBLIC
