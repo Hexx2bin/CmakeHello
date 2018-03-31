@@ -12,15 +12,17 @@
  */
 
 #include <iostream>
+#include <Square.h>
 
 using namespace std;
 
 /*
  * 
  */
-int main(int argc, char** argv) 
+int main() 
 {
-    cout << "Hello World 2234" << endl;
+    Square _mySquare(4);
+    cout << "Area: " << _mySquare.GetArea() << endl;
     cin.get();
     return 0;
 }
